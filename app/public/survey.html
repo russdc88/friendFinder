@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cat Survey</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+
+	<!-- JQuery -->
+
+
+
+
+
+	<!--CSS Style-->
+
+	<style>
+		.cat-photo {
+			width: 275px;
+			height: 275px;
+		}
+	</style>
+
+
+
+</head>
+
+<body>
+	<div class="text-center jumbotron jumbotron-fluid bg-danger text-white pb-3">
+		<div class="container-fill ">
+			<h1 class="display-4">Find Cat Love</h1>
+			<p class="lead">Take this survey to find your true lover!</p>
+			<a class="btn btn-primary" href="/*">Home</a>
+		</div>
+	</div>
+
+
+	<!-- Reservation Page -->
+	<div class="container">
+		<div class="card mb-4">
+			<div class="card-header">
+				Personal Info
+			</div>
+			<div class="card-body">
+				<form role="form">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="Full Name" required>
+					</div>
+					<div class="form-group">
+						<label for="image-link">Paste your image link here</label>
+						<input type="text" class="form-control" id="image-link" required>
+					</div>
+					<!-- </div> -->
+					<div class="card-header mb-4">
+						Survey: Rate the cats from 1 (That cat sucks) to 10 (Now that is a feline!)
+					</div>
+					<div class="row">
+
+						<!-- <div class="card-body"> -->
+						<!-- Cat 1-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat1">
+									<h4>Hungry cat</h4>
+									<img class="cat-photo" src="https://data.whicdn.com/images/298844185/large.jpg?t=1507433077" alt="Cat 1">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat1" required>
+							</div>
+						</div>
+
+						<!-- Cat 2-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat2">
+									<h4>Drunk cat</h4>
+									<img class="cat-photo" src="http://static.boredpanda.com/blog/wp-content/uploads/2014/01/funny-cats-sneezing-3.jpg" alt="Cat 2">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat2" class="h-75" required>
+							</div>
+						</div>
+
+						<!-- Cat 3-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat3">
+									<h4>Cute Cat</h4>
+									<img class="cat-photo" src="https://data.whicdn.com/images/193306779/superthumb.jpg?t=1439102094" alt="Cat 3">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat3" required>
+							</div>
+						</div>
+
+						<!-- Cat 4-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat4">
+									<h4>Ugly Cat</h4>
+									<img class="cat-photo" src="https://images.pexels.com/photos/35605/sphynx-cat-race-cat-bald.jpg?cs=srgb&dl=animal-bald-cat-35605.jpg"
+									 alt="Cat 4">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat4" required>
+							</div>
+						</div>
+						<!-- Cat 5-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat5">
+									<h4>Fat Cat</h4>
+									<img class="cat-photo" src="http://cdn.24.co.za/files/Cms/General/d/6916/bf834a8e7c224c60a40968704f5b7334.jpg" alt="Cat 5">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat5" required>
+							</div>
+						</div>
+						<!-- Cat 6-->
+						<div class="col-xl-4">
+							<div class="form-group">
+
+								<label for="cat6">
+									<h4>Spooky Cat</h4>
+									<img class="cat-photo" src="https://catzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2014/10/Black-cat-marvelous-hd-wallpaper.jpg"
+									 alt="Cat 6">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat6" required>
+							</div>
+						</div>
+
+						<!-- Cat 7-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat7">
+									<h4>Bobcat</h4>
+									<img class="cat-photo" src="https://i1.wp.com/www.whats-your-sign.com/wp-content/uploads/2017/12/BobcatAnimalTotem3.jpg"
+									 alt="Cat 7">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat7" required>
+							</div>
+						</div>
+
+						<!-- Cat 8-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat8">
+									<h4>Grumpy Cat</h4>
+									<img class="cat-photo" src="http://www.kmkmedia.com/images/easyblog_articles/147/b2ap3_large_dealing-with-negative-facebook-feedback.jpg"
+									 alt="Cat 8">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat8" required>
+							</div>
+						</div>
+
+						<!-- Cat 9-->
+						<div class="col-xl-4">
+
+							<div class="form-group">
+								<label for="cat9">
+									<h4>Ferguson the Cat</h4>
+									<img class="cat-photo" src="https://vignette.wikia.nocookie.net/newgirl/images/3/3c/Furguson.jpg" alt="Cat 9">
+								</label>
+								<input type="number" name="quantity" min="1" max="10" class="form-control" id="cat9" required>
+							</div>
+						</div>
+
+					</div>
+					<!-- End of Cats-->
+
+
+					<button type="submit" class="btn btn-primary submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<footer>
+		<a href="/api/friends">Friends API</a>
+	</footer>
+
+	<!-- Modal-->
+	<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="ModalLabel"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+<!-- Jquery-->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!--Bootstrap javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+ crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+
+
+
+	$(".submit").on("click", function (event) {
+		event.preventDefault();
+		var score1 = parseInt($("#cat1").val())
+		var score2 = parseInt($("#cat2").val())
+		var score3 = parseInt($("#cat3").val())
+		var score4 = parseInt($("#cat4").val())
+		var score5 = parseInt($("#cat5").val())
+		var score6 = parseInt($("#cat6").val())
+		var score7 = parseInt($("#cat7").val())
+		var score8 = parseInt($("#cat8").val())
+		var score9 = parseInt($("#cat9").val())
+
+
+
+		// Here we grab the form elements
+		var newFriend = {
+			name: $("#name").val().trim(),
+			photo: $("#image-link").val().trim(),
+			score: [
+				score1,
+				score2,
+				score3,
+				score4,
+				score5,
+				score6,
+				score7,
+				score8,
+				score9
+			]
+		};
+
+		if (newFriend.name === "" || newFriend.photo === "") {
+			alert("Please add or correct your name or link");
+
+		}
+
+		else if (
+			isNaN(score1) ||
+			isNaN(score2) ||
+			isNaN(score3) ||
+			isNaN(score4) ||
+			isNaN(score5) ||
+			isNaN(score6) ||
+			isNaN(score7) ||
+			isNaN(score8) ||
+			isNaN(score9)
+		) {
+			alert("Please add or correct your score ")
+		}
+
+		else if (
+			score1 > 10 ||
+			score2 > 10 ||
+			score3 > 10 ||
+			score4 > 10 ||
+			score5 > 10 ||
+			score6 > 10 ||
+			score7 > 10 ||
+			score8 > 10 ||
+			score9 > 10
+		) {
+			alert("Please pick a value between 1 and 10")
+		}
+
+		else if (
+			score1 < 0 ||
+			score2 < 0 ||
+			score3 < 0 ||
+			score4 < 0 ||
+			score5 < 0 ||
+			score6 < 0 ||
+			score7 < 0 ||
+			score8 < 0 ||
+			score9 < 0 
+			) {
+			alert("Please pick a value between 1 and 10")
+		}
+
+		else {
+
+			postValues()
+		}
+
+
+
+
+
+		function postValues() {
+
+
+
+			$.post("/api/friends", newFriend,
+				function (data) {
+
+					// If a table is available... tell user they are booked.
+					if (data) {
+						alert("See your results..");
+						findMatch()
+					}
+
+					else {
+						alert("Did not work")
+
+					}
+
+				})
+
+		}
+
+
+
+	})
+
+	function findMatch() {
+
+		$.ajax({ url: "/api/friends", method: "GET" })
+			.then(function (tableData) {
+
+				console.log(tableData)
+
+				//taking the sum of each score and putting in an array
+				var scoreArray = [];
+
+				for (var i = 0; i < tableData.length; i++) {
+					var total = 0;
+					for (var j = 0; j < tableData[i].score.length; j++) {
+						total = total + parseInt(tableData[i].score[j])
+					}
+					scoreArray[i] = total
+				}
+
+				console.log(scoreArray)
+				// taking the difference of each value of the array
+				var closestScoreArray = []
+
+				for (var i = 0; i < scoreArray.length - 1; i++) {
+					var value =
+						Math.abs(scoreArray[i] - scoreArray[scoreArray.length - 1]);
+					closestScoreArray[i] = value;
+				}
+
+				console.log(closestScoreArray)
+				console.log(typeof closestScoreArray[0])
+				//find the index # of the small number in the array
+				var match = closestScoreArray.indexOf(Math.min.apply(null, closestScoreArray))
+
+				console.log(Math.min.apply(null, closestScoreArray));
+
+				console.log(match)
+
+				console.log(tableData[match].photo)
+
+				$("#ModalLabel").text("You matched with " + tableData[match].name + "!")
+
+
+				$(".modal-body").html("<img class = 'cat-photo' src='" + tableData[match].photo + "' alt='matchmaker'>")
+
+				$("#Modal").modal('show');
+				
+				$("#cat1").val("")
+				$("#cat2").val("")
+				$("#cat3").val("")
+				$("#cat4").val("")
+				$("#cat5").val("")
+				$("#cat6").val("")
+				$("#cat7").val("")
+				$("#cat8").val("")
+				$("#cat9").val("")
+
+			});
+	};
+
+
+
+
+
+</script>
