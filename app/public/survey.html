@@ -40,7 +40,7 @@
 	</div>
 
 
-	<!-- Reservation Page -->
+	<!-- Reservation Page with the form-->
 	<div class="container">
 		<div class="card mb-4">
 			<div class="card-header">
@@ -56,13 +56,13 @@
 						<label for="image-link">Paste your image link here</label>
 						<input type="text" class="form-control" id="image-link" required>
 					</div>
-					<!-- </div> -->
+
 					<div class="card-header mb-4">
 						Survey: Rate the cats from 1 (That cat sucks) to 10 (Now that is a feline!)
 					</div>
 					<div class="row">
 
-						<!-- <div class="card-body"> -->
+
 						<!-- Cat 1-->
 						<div class="col-xl-4">
 
@@ -176,7 +176,7 @@
 					</div>
 					<!-- End of Cats-->
 
-
+					<!-- Submit button  -->
 					<button type="submit" class="btn btn-primary submit">Submit</button>
 				</form>
 			</div>
@@ -229,7 +229,7 @@
 
 <script type="text/javascript">
 
-
+	//changing the values of the form into a Integer
 
 	$(".submit").on("click", function (event) {
 		event.preventDefault();
@@ -246,6 +246,7 @@
 
 
 		// Here we grab the form elements
+		// we put them in an object called newFriends
 		var newFriend = {
 			name: $("#name").val().trim(),
 			photo: $("#image-link").val().trim(),
@@ -261,12 +262,14 @@
 				score9
 			]
 		};
+		//Setting conditions for the form to be submitted correctly
 
+		//This makes sure your name and photo link isn't blank, else returns the alert
 		if (newFriend.name === "" || newFriend.photo === "") {
 			alert("Please add or correct your name or link");
 
 		}
-
+		//makes sure that the values you pick for your score is a number, else returns the alert
 		else if (
 			isNaN(score1) ||
 			isNaN(score2) ||
@@ -280,7 +283,7 @@
 		) {
 			alert("Please add or correct your score ")
 		}
-
+		//makes sure the value is less than 11, else returns the alert
 		else if (
 			score1 > 10 ||
 			score2 > 10 ||
@@ -294,7 +297,7 @@
 		) {
 			alert("Please pick a value between 1 and 10")
 		}
-
+		// finally makes sure the value is non-negative, else returns the alert
 		else if (
 			score1 < 0 ||
 			score2 < 0 ||
@@ -304,23 +307,24 @@
 			score6 < 0 ||
 			score7 < 0 ||
 			score8 < 0 ||
-			score9 < 0 
-			) {
+			score9 < 0
+		) {
 			alert("Please pick a value between 1 and 10")
 		}
 
 		else {
-
+			// once condition is met, will post the values
 			postValues()
 		}
 
 
 
 
-
+		//function to post the values
 		function postValues() {
 
 
+			// will be posted on the path /api/friends 
 
 			$.post("/api/friends", newFriend,
 				function (data) {
@@ -328,6 +332,7 @@
 					// If a table is available... tell user they are booked.
 					if (data) {
 						alert("See your results..");
+						//this runs the match function to show who you match with, with their picture
 						findMatch()
 					}
 
@@ -375,6 +380,7 @@
 				console.log(closestScoreArray)
 				console.log(typeof closestScoreArray[0])
 				//find the index # of the small number in the array
+				//need the apply to search in an array
 				var match = closestScoreArray.indexOf(Math.min.apply(null, closestScoreArray))
 
 				console.log(Math.min.apply(null, closestScoreArray));
@@ -389,7 +395,7 @@
 				$(".modal-body").html("<img class = 'cat-photo' src='" + tableData[match].photo + "' alt='matchmaker'>")
 
 				$("#Modal").modal('show');
-				
+
 				$("#cat1").val("")
 				$("#cat2").val("")
 				$("#cat3").val("")

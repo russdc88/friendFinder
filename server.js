@@ -1,4 +1,4 @@
-
+//require express package
 
 var express = require("express");
 
@@ -26,7 +26,7 @@ app.use(express.json());
 require("./app/route/apiRoutes")(app);
 require("./app/route/htmlRoutes")(app);
 
-
+//run the route
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
